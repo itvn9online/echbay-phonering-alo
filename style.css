@@ -133,8 +133,13 @@
 .phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-img-circle,
 .phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-img-circle { background-color: #ccc }
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-img-circle { background-color: #75eb50 }
-/* .echbay-alo-phone { display: none; } */
+.echbay-alo-phone { display: none; }
 .style-for-mobile .echbay-alo-phone { display: block; }
+/*
+@media screen and (max-width:775px) {
+.echbay-alo-phone { display: block; }
+}
+*/
 @-webkit-keyframes phonering-alo-circle-anim {
 0% {
 -webkit-transform:rotate(0) scale(.5) skew(1deg);
