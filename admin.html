@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="{tmp.epa_plugin_url}style.css?v={tmp.epa_plugin_version}" type="text/css" />
+<link rel="stylesheet" href="{tmp.epa_plugin_url}admin.css?v={tmp.epa_plugin_version}" type="text/css" />
+<div class="epa-exemple-relative">
+	<div class="epa-exemple-box">Exemple box</div>
+	<div class="wrap">
+		<h1>Setting Phonering Alo</h1>
+		<form name="echbay_config_for_epa" id="echbay_config_for_epa" method="post" action="" class="validate" target="target_eb_plugins_iframe">
+			<input type="hidden" id="_ebnonce" name="_ebnonce" value="{tmp._ebnonce}" />
+			<input type="hidden" id="license" name="_epa_license" value="{tmp.license}" />
+			<input type="hidden" id="hide_powered" name="_epa_hide_powered" value="{tmp.hide_powered}" />
+			<p>* Note: Default values will be used if custom values are not set.</p>
+			<table class="form-table">
+				<tr class="form-field form-required term-name-wrap">
+					<th scope="row"><label for="phone_number">Phone number</label></th>
+					<td><input name="_epa_phone_number" id="phone_number" type="text" value="{tmp.phone_number}" placeholder="+1234567890" />
+						<p class="description">The phone number for custom click to call.</p></td>
+				</tr>
+				<tr class="form-field form-required term-name-wrap">
+					<th scope="row"><label for="header_bg">Background Color</label></th>
+					<td><input type="color" name="_epa_header_bg" id="header_bg" value="{tmp.header_bg}" placeholder="{aaa.header_bg}" class="epa-color-picker" />
+						<span data-set="header_bg" class="btn-restore-default">Default</span></td>
+				</tr>
+				<tr class="form-field term-slug-wrap">
+					<th scope="row"><label for="widget_width">Widget Width</label></th>
+					<td><input name="_epa_widget_width" id="widget_width" type="number" value="{tmp.widget_width}" placeholder="{aaa.widget_width}" /></td>
+				</tr>
+				<tr class="form-field term-parent-wrap">
+					<th scope="row"><label for="widget_position">Position</label></th>
+					<td><select name="_epa_widget_position" id="widget_position" class="postform">
+							{tmp.str_position}
+						</select></td>
+				</tr>
+				<tr class="form-field term-description-wrap">
+					<th scope="row"><label for="custom_style">Custom CSS</label></th>
+					<td><textarea name="_epa_custom_style" id="custom_style" rows="5" cols="50" placeholder="{aaa.custom_style}" class="large-text">{tmp.custom_style}</textarea>
+						<p class="description">The custom style for development.</p></td>
+				</tr>
+			</table>
+			<div class="eb-plugin-submit">
+				<input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes" />
+			</div>
+		</form>
+	</div>
+</div>
+<iframe id="target_eb_plugins_iframe" name="target_eb_plugins_iframe" src="about:blank" width="750" height="600">AJAX form</iframe>
+<script type="text/javascript" src="{tmp.epa_plugin_url}admin.js?v={tmp.epa_plugin_version}"></script> 
